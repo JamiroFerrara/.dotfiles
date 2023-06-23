@@ -12,6 +12,7 @@
     "/home/stiwie/.config/kitty/theme.conf",
     "/home/stiwie/.gitconfig",
     "/home/stiwie/.tmux.conf",
-    "/home/stiwie/.config/starship.toml"
+    "/home/stiwie/.config/starship.toml",
+    "/home/stiwie/.config/rofi/config.rasi"
   ]
 }
