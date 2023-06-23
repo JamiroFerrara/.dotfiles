@@ -246,3 +246,4 @@ tr=34:\
 tw=35:\
 tx=36:"
 
+tmux attach
