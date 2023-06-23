@@ -1,0 +1,10 @@
+{
+  "git_user": "Jamiro Ferrara",
+  "git_url": "https://github.com/JamiroFerrara/.dotfiles",
+  "files": [
+    "/home/stiwie/.bashrc",
+    "/home/stiwie/.zshrc",
+    "/home/stiwie/.config/alacritty/alacritty.yml",
+    "/home/stiwie/.config/picom.conf"
+  ]
+}
