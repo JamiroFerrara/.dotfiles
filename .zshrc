@@ -221,6 +221,7 @@ alias reboot="sudo reboot"
 alias feh="feh --bg-fill"
 alias conf="nvim /home/stiwie/.dotfiles"
 alias speed="speedtest-rs"
+alias pkg="/home/stiwie/.scripts/pkgsearch.sh"
 function scr() {
     touch $1
     chmod +x $1
