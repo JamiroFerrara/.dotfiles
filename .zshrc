@@ -221,6 +221,8 @@ alias wifi-lorenza='nmcli dev wifi connect 64:70:02:B7:42:E4 password igeamarina
 alias reboot="sudo reboot"
 alias feh="feh --bg-fill"
 
+alias asdf="echo asdfasdf"
+
 eval "$(starship init zsh)"
 # eval "$(mcfly init zsh)"
 
