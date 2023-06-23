@@ -153,7 +153,6 @@ alias new="touch"
 alias install="sudo apt install"
 alias ins="sudo apt install"
 alias inss="sudo apt search"
-alias conf="nvim /home/stiwie/.config"
 
 source ~/.local/share/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 bindkey '^J' autosuggest-execute
@@ -220,7 +219,7 @@ alias wifi-lorenza='nmcli dev wifi connect 64:70:02:B7:42:E4 password igeamarina
 
 alias reboot="sudo reboot"
 alias feh="feh --bg-fill"
-alias config="nvim /home/stiwie/.dotfiles"
+alias conf="nvim /home/stiwie/.dotfiles"
 
 eval "$(starship init zsh)"
 # eval "$(mcfly init zsh)"
@@ -246,4 +245,6 @@ tr=34:\
 tw=35:\
 tx=36:"
 
-tmux attach
+if [[ -z $TMUX ]]; then
+    tmux attach
+fi
