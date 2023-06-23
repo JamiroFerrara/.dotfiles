@@ -220,6 +220,10 @@ alias wifi-lorenza='nmcli dev wifi connect 64:70:02:B7:42:E4 password igeamarina
 alias reboot="sudo reboot"
 alias feh="feh --bg-fill"
 alias conf="nvim /home/stiwie/.dotfiles"
+function() {
+    touch $1
+    chmod +x $1
+}
 
 eval "$(starship init zsh)"
 # eval "$(mcfly init zsh)"
