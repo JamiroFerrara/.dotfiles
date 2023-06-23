@@ -1,5 +1,8 @@
 # ~/.config/starship.toml
 
+# Inserts a blank line between shell prompts
+add_newline = false
+
 [battery]
 full_symbol = "🔋"
 charging_symbol = "🔌"
@@ -74,12 +77,6 @@ style = "bold green"
 [rust]
 format = "[$symbol$version]($style) "
 style = "bold green"
-
-[time]
-time_format = "%T"
-format = "🕙 $time($style) "
-style = "bright-white"
-disabled = false
 
 [username]
 style_user = "bold dimmed blue"
