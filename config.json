@@ -7,6 +7,7 @@
     "/home/stiwie/.config/alacritty/alacritty.yml",
     "/home/stiwie/.config/picom.conf",
     "/home/stiwie/.config/sxhkd/sxhkdrc",
-    "/home/stiwie/.config/bspwm/bspwmrc"
+    "/home/stiwie/.config/bspwm/bspwmrc",
+    "/home/stiwie/.config/kitty/kitty.conf"
   ]
 }
