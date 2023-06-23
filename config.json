@@ -9,6 +9,7 @@
     "/home/stiwie/.config/sxhkd/sxhkdrc",
     "/home/stiwie/.config/bspwm/bspwmrc",
     "/home/stiwie/.config/kitty/kitty.conf",
-    "/home/stiwie/.config/kitty/theme.conf"
+    "/home/stiwie/.config/kitty/theme.conf",
+    "/home/stiwie/.gitconfig"
   ]
 }
