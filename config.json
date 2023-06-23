@@ -10,6 +10,7 @@
     "/home/stiwie/.config/bspwm/bspwmrc",
     "/home/stiwie/.config/kitty/kitty.conf",
     "/home/stiwie/.config/kitty/theme.conf",
-    "/home/stiwie/.gitconfig"
+    "/home/stiwie/.gitconfig",
+    "/home/stiwie/.tmux.conf"
   ]
 }
