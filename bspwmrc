@@ -10,7 +10,7 @@ xrandr --output eDP-1 --mode 1920x1200 --rate 59.88
 sleep 0.50
 
 #Start polybar first
-bash $HOME/polybar-collection/launch.sh &
+#bash $HOME/polybar-collection/launch.sh &
 feh --bg-fill ~/pictures/background/bg.jpg &
 
 #xwinwrap -g 2560x1080 -d -fs -fdt -ni -b -nf -un -o 1.0 -debug -- mpv -wid WID --loop --no-audio "/home/stiwie/Pictures/Live_Backgrounds/snowfall.mp4"
