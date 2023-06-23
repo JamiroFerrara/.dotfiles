@@ -5,6 +5,7 @@ export PATH="$PATH:/opt/mssql-tools/bin"
 export PATH="$PATH:/usr/local/go/bin"
 export export LD_LIBRARY_PATH="/usr/local/lib"
 export NODE_EXTRA_CA_CERTS="usr/local/share/ca-certificates/zscaler-root.pem"
+export RUSTC_WRAPPER=sccache cargo install {package}
 alias nuget="mono /usr/local/bin/nuget.exe"
 EDITOR=nvim
 # Case insensitive completion
@@ -220,6 +221,7 @@ alias wifi-lorenza='nmcli dev wifi connect 64:70:02:B7:42:E4 password igeamarina
 alias reboot="sudo reboot"
 alias feh="feh --bg-fill"
 alias conf="nvim /home/stiwie/.dotfiles"
+alias speed="speedtest-rs"
 function scr() {
     touch $1
     chmod +x $1
