@@ -5,6 +5,7 @@
     "/home/stiwie/.bashrc",
     "/home/stiwie/.zshrc",
     "/home/stiwie/.config/alacritty/alacritty.yml",
-    "/home/stiwie/.config/picom.conf"
+    "/home/stiwie/.config/picom.conf",
+    "/home/stiwie/.config/sxhkd/sxhkdrc"
   ]
 }
