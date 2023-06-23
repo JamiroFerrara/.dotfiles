@@ -19,10 +19,10 @@ super + f
 
 # program launcher
 ctrl + space
-	rofi -show drun
+	/home/stiwie/.config/rofi/launchers/type-1/launcher.sh -show drun
 
 super + space
-	rofi -show drun
+	/home/stiwie/.config/rofi/launchers/type-1/launcher.sh -show drun
 
 # make sxhkd reload its configuration files:
 alt + Escape

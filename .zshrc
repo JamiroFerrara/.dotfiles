@@ -11,6 +11,8 @@ EDITOR=nvim
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
 autoload -Uz compinit && compinit
 
+alias rofi="/home/stiwie/.config/rofi/launchers/type-1/launcher.sh"
+
 # Node options
 # export NODE_OPTIONS=--openssl-legacy-provider
 
