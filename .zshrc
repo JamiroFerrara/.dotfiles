@@ -245,6 +245,6 @@ tr=34:\
 tw=35:\
 tx=36:"
 
-if [[ -z $TMUX ]]; then
-    tmux attach
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux
 fi
