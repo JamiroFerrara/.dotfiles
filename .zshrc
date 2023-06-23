@@ -215,7 +215,7 @@ alias gpt="/root/.scripts/cgpt.sh"
 alias sus="systemctl suspend"
 # if [ "$TMUX" = "" ]; then tn; fi
 
-alias wifi='nmcli dev wifi list'
+alias wifi='/home/stiwie/.scripts/wifi.sh'
 alias wifi-lorenza='nmcli dev wifi connect 64:70:02:B7:42:E4 password igeamarina'
 
 alias reboot="sudo reboot"
