@@ -220,6 +220,7 @@ alias wifi-lorenza='nmcli dev wifi connect 64:70:02:B7:42:E4 password igeamarina
 
 alias reboot="sudo reboot"
 alias feh="feh --bg-fill"
+alias config="nvim -c 'Telescope find_filesnvim -c 'lua require(\"harpoon.ui\").nav_file(1)'; exit' /home/stiwie/.dotfiles"
 
 eval "$(starship init zsh)"
 # eval "$(mcfly init zsh)"
