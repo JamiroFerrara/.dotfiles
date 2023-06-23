@@ -1,76 +1,89 @@
-#add_newline = true
-
-format = """\
-  $username\
-  $memory_usage\
-  $hostname\
-  $directory\
-  $git_branch\
-  $git_commit\
-  $git_state\
-  $git_status\
-  $package\
-  $python\
-  $rust\
-  $nix_shell\
-  $env_var\
-  $line_break\
-  $battery\
-  $cmd_duration\
-  $jobs\
-  $time\
-  $character\
-  """
+# ~/.config/starship.toml
 
 [battery]
 full_symbol = "🔋"
-charging_symbol = "⚡️"
-discharging_symbol = "💀"
+charging_symbol = "🔌"
+discharging_symbol = "⚡"
 
 [[battery.display]]
-threshold = 10
+threshold = 30
 style = "bold red"
 
-[[battery.display]]
-threshold = 60
-style = "bold yellow"
-
-[[battery.display]]
-threshold = 100
-style = "bold green"
-
 [character]
-# symbol = "➜"
-error_symbol = "✗"
-use_symbol_for_status = true
+error_symbol = "[✖](bold red) "
 
 [cmd_duration]
-min_time = 500
-format = "took [$duration]($style) "
+min_time = 10_000  # Show command duration over 10,000 milliseconds (=10 sec)
+format = " took [$duration]($style)"
 
 [directory]
-truncation_length = 6
-truncate_to_repo = true
-disabled = false
+truncation_length = 5
+format = "[$path]($style)[$lock_symbol]($lock_style) "
+
+[git_branch]
+format = " [$symbol$branch]($style) "
+symbol = "🍣 "
+style = "bold yellow"
+
+[git_commit]
+commit_hash_length = 8
+style = "bold white"
+
+[git_state]
+format = '[\($state( $progress_current of $progress_total)\)]($style) '
+
+[git_status]
+conflicted = "⚔️ "
+ahead = "🏎️ 💨 ×${count}"
+behind = "🐢 ×${count}"
+diverged = "🔱 🏎️ 💨 ×${ahead_count} 🐢 ×${behind_count}"
+untracked = "🛤️  ×${count}"
+stashed = "📦 "
+modified = "📝 ×${count}"
+staged = "🗃️  ×${count}"
+renamed = "📛 ×${count}"
+deleted = "🗑️  ×${count}"
+style = "bright-white"
+format = "$all_status$ahead_behind"
 
 [hostname]
 ssh_only = false
-format = "[$hostname]($style) in "
-trim_at = "."
+format = "<[$hostname]($style)>"
+trim_at = "-"
+style = "bold dimmed white"
+disabled = true
+
+[julia]
+format = "[$symbol$version]($style) "
+symbol = "ஃ "
+style = "bold green"
+
+[memory_usage]
+format = "$symbol[${ram}( | ${swap})]($style) "
+threshold = 70
+style = "bold dimmed white"
 disabled = false
 
-[line_break]
-disabled = false
+[package]
+disabled = true
 
 [python]
-symbol = "🐍 "
-pyenv_version_name = false
-pyenv_prefix = "pyenv"
-style = "bold yellow"
+format = "[$symbol$version]($style) "
+style = "bold green"
+
+[rust]
+format = "[$symbol$version]($style) "
+style = "bold green"
+
+[time]
+time_format = "%T"
+format = "🕙 $time($style) "
+style = "bright-white"
 disabled = false
 
 [username]
-style_root = "bold red"
-style_user = "bold yellow"
+style_user = "bold dimmed blue"
 show_always = false
-disabled = false ~/.config/starship.toml
+
+[nodejs]
+format = "via [🤖 $version](bold green) "
