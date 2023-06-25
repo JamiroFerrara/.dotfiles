@@ -82,8 +82,8 @@ bspc desktop -f ^1
 sleep 0.50
 urxvtc &
 lxpolkit &
-picom --experimental-backend --config "$HOME/.config/picom.conf" &
-#picom --config "$HOME/.config/picom.conf" &
+#picom --experimental-backend --config "$HOME/.config/picom.conf" &
+picom --config "$HOME/.config/picom.conf" &
 bspc desktop -f ^1
 bash ~/Git
 
