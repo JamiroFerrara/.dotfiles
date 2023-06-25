@@ -222,7 +222,7 @@ alias wifi='/home/stiwie/.scripts/wifi.sh'
 alias wifi-lorenza='nmcli dev wifi connect 64:70:02:B7:42:E4 password igeamarina'
 alias wifi-ferrara='nmcli dev wifi connect 64:70:02:FC:04:BC password elettra1'
 
-alias domains="vercel domains"
+alias domains="godaddy domains"
 
 alias reboot="sudo reboot"
 alias feh="feh --bg-fill"
