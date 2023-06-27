@@ -158,12 +158,12 @@ alias apt="nala"
 alias install="sudo nala install"
 alias uninstall="sudo nala remove"
 alias search="sudo nala search"
-alias in="sudo nala install"
+alias in="sudo nala -y install"
 alias nix='nix --extra-experimental-features "nix-command flakes"'
 alias nixs='nix --extra-experimental-features "nix-command flakes" search nixpkgs'
 alias nixi='nix-env -iA nixpkgs.'
 alias nixgc='nix-env --delete-generations old; nix-store --gc'
-alias un="sudo nala remove"
+alias un="sudo nala -y remove"
 
 source ~/.local/share/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 bindkey '^J' autosuggest-execute
