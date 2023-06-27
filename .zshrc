@@ -158,7 +158,7 @@ alias install="sudo nala install"
 alias uninstall="sudo nala remove"
 alias search="sudo nala search"
 alias in="sudo nala install"
-alias inxs='nix --extra-experimental-features "nix-command flakes" search nixpkgs'
+alias nix='nix --extra-experimental-features "nix-command flakes"'
 alias inx='nix-env -i'
 alias un="sudo nala remove"
 
