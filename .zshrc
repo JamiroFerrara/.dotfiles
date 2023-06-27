@@ -108,7 +108,7 @@ alias lgp="powershell lazygit"
 #alias vi="tmux neww nvim -c 'lua require(\"harpoon.ui\").nav_file(1)'; exit"
 alias vi="nvim"
 alias vim="nvim -c 'Telescope find_files; exit'"
-alias nvim="nvim -c 'lua require(\"harpoon.ui\").nav_file(1)'"
+alias nvim="nvim"
 alias hdmi="/home/stiwie/.scripts/xrandr/hdmi.sh"
 
 alias m="make"
