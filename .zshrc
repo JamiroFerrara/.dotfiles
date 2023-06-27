@@ -53,6 +53,7 @@ function seda() {
     sed -i "s/${1//\//\\/}/${2//\//\\/}/g" *
 }
 alias sh="sudo shutdown"
+alias s="/home/stiwie/.scripts/dmscripts/scripts/dm-websearch.sh"
 alias rb="sudo reboot"
 function s() {
     query="https://www.google.com/search?q="+$*
