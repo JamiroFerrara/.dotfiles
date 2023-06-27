@@ -26,3 +26,8 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 . "$HOME/.cargo/env"
+
+if [ -f $HOME/.nix-profile/etc/profile.d/nix.sh ];
+then
+    source $HOME/.nix-profile/etc/profile.d/nix.sh
+fi
