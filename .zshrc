@@ -157,8 +157,8 @@ alias apt="nala"
 alias install="sudo nala install"
 alias uninstall="sudo nala remove"
 alias search="sudo nala search"
-alias in="sudo apt install"
-alias un="sudo apt remove"
+alias in="sudo nala install"
+alias un="sudo nala remove"
 
 source ~/.local/share/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 bindkey '^J' autosuggest-execute
