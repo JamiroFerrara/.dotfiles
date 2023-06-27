@@ -161,7 +161,7 @@ alias search="sudo nala search"
 alias in="sudo nala install"
 alias nix='nix --extra-experimental-features "nix-command flakes"'
 alias nixs='nix --extra-experimental-features "nix-command flakes" search nixpkgs'
-alias nixi='nix-env -i'
+alias nixi='nix-env -iA nixpkgs.'
 alias un="sudo nala remove"
 
 source ~/.local/share/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
