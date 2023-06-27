@@ -11,7 +11,7 @@ EDITOR=nvim
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
 autoload -Uz compinit && compinit
 
-alias rofi="/home/stiwie/.config/rofi/launchers/type-1/launcher.sh"
+#alias rofi="/home/stiwie/.config/rofi/launchers/type-1/launcher.sh"
 alias npush="dotnet nuget push --api-key oy2i6h4vojirqnolo2dqrzlk6vi54ueevao2vpmlr246z4 --source https://api.nuget.org/v3/index.json"
 
 # Node options
