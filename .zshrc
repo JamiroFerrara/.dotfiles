@@ -155,8 +155,10 @@ alias fzf="fzf --preview 'batcat --color=always --style=numbers --line-range=:50
 alias new="touch"
 alias apt="nala"
 alias install="sudo nala install"
-alias ins="sudo apt install"
-alias inss="sudo apt search"
+alias uninstall="sudo nala remove"
+alias search="sudo nala search"
+alias in="sudo apt install"
+alias un="sudo apt remove"
 
 source ~/.local/share/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 bindkey '^J' autosuggest-execute
