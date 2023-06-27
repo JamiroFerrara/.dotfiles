@@ -154,7 +154,7 @@ alias pm="/root/.scripts/pman.sh"
 alias fzf="fzf --preview 'batcat --color=always --style=numbers --line-range=:500 {}'"
 alias new="touch"
 alias apt="nala"
-alias install="sudo apt install"
+alias install="sudo nala install"
 alias ins="sudo apt install"
 alias inss="sudo apt search"
 
