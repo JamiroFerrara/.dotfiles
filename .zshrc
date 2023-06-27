@@ -5,10 +5,6 @@ export PATH="$PATH:/opt/mssql-tools/bin"
 export PATH="$PATH:/usr/local/go/bin"
 export export LD_LIBRARY_PATH="/usr/local/lib"
 export NODE_EXTRA_CA_CERTS="usr/local/share/ca-certificates/zscaler-root.pem"
-if [ -f $HOME/.nix-profile/etc/profile.d/nix.sh ];
-then
-    source $HOME/.nix-profile/etc/profile.d/nix.sh
-fi
 alias nuget="mono /usr/local/bin/nuget.exe"
 EDITOR=nvim
 # Case insensitive completion
