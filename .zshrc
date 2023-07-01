@@ -65,7 +65,7 @@ function sl() {
 }
 
 function upload() {
-BASE_URL="http://localhost:3000/upload"
+BASE_URL="https://wasabi-uploader.fly.dev/upload"
 
 for file in *; do
   if [ -f "$file" ]; then
