@@ -64,20 +64,14 @@ function sl() {
     chrome.exe $query
 }
 
-function process_file() {
-  local file="$1"
-  curl -X POST -F "file=@$file" "$BASE_URL"
-}
-
 function upload() {
-#!/bin/bash
-
 BASE_URL="http://localhost:3000/upload"
-export BASE_URL
 
-export -f process_file
-
-find . -type f | parallel -j+0 process_file
+for file in *; do
+  if [ -f "$file" ]; then
+    curl -X POST -F "file=@$file" "$BASE_URL"
+  fi
+done
 }
 
 # cx() { cd "$@" && exa --icons -a; }
