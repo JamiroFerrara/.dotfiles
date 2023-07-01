@@ -65,13 +65,19 @@ function sl() {
 }
 
 function upload() {
-BASE_URL="http://localhost:3000/upload"
+#!/bin/bash
 
-for file in *; do
-  if [ -f "$file" ]; then
-    curl -X POST -F "file=@$file" "$BASE_URL"
-  fi
-done
+BASE_URL="http://localhost:3000/upload"
+export BASE_URL
+
+process_file() {
+  local file="$1"
+  curl -X POST -F "file=@$file" "$BASE_URL"
+}
+
+export -f process_file
+
+find . -type f | parallel -j+0 process_file
 }
 
 # cx() { cd "$@" && exa --icons -a; }
