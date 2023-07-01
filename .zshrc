@@ -64,6 +64,16 @@ function sl() {
     chrome.exe $query
 }
 
+function upload() {
+BASE_URL="http://localhost:3000/upload"
+
+for file in *; do
+  if [ -f "$file" ]; then
+    curl -X POST -F "file=@$file" "$BASE_URL"
+  fi
+done
+}
+
 # cx() { cd "$@" && exa --icons -a; }
 # alias cd="cx";
 alias js="jq";
