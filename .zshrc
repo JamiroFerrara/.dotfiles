@@ -3,6 +3,7 @@ export JIRA_API_TOKEN="ATATT3xFfGF0-obuRc_PsEEfx7qpDFGYbv0AGioBywm216OEHJWxPEzos
 export PATH="$PATH:$HOME/.dotnet/tools/"
 export PATH="$PATH:/opt/mssql-tools/bin"
 export PATH="$PATH:/usr/local/go/bin"
+export PATH="$PATH:/usr/local/bin/webtorrent"
 export export LD_LIBRARY_PATH="/usr/local/lib"
 export NODE_EXTRA_CA_CERTS="usr/local/share/ca-certificates/zscaler-root.pem"
 export NIXPKGS_ALLOW_UNFREE=1
