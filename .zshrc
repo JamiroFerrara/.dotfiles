@@ -75,6 +75,16 @@ for file in *; do
 done
 }
 
+function upload_wav() {
+BASE_URL="https://wasabi-uploader.fly.dev/upload_wav"
+
+for file in *.wav; do
+  if [ -f "$file" ]; then
+    curl -X POST -F "file=@$file" "$BASE_URL"
+  fi
+done
+}
+
 # cx() { cd "$@" && exa --icons -a; }
 # alias cd="cx";
 alias js="jq";
