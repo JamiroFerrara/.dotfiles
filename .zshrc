@@ -88,13 +88,7 @@ done
 # cx() { cd "$@" && exa --icons -a; }
 # alias cd="cx";
 alias js="jq";
-
-function debug-service {
-  cmd="$(pwd)/.commands"
-  res=$(cat $cmd | fzy)
-  eval $res
-}
-alias d="debug-service";
+alias debug="make debug"
 
 alias q="exit";
 alias cm="cmatrix -C white -u 9";
