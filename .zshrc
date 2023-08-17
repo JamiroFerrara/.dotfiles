@@ -10,6 +10,13 @@ export NODE_EXTRA_CA_CERTS="usr/local/share/ca-certificates/zscaler-root.pem"
 export NIXPKGS_ALLOW_UNFREE=1
 alias nuget="mono /usr/local/bin/nuget.exe"
 EDITOR=nvim
+
+#NOTE: Homebrew
+test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)"
+test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+test -r ~/.bash_profile && echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bash_profile
+echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.profile
+
 # Case insensitive completion
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
 autoload -Uz compinit && compinit
